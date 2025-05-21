@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BIP Radio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+  <link href="css/styles.css" rel="stylesheet" />
+</head>
+<body>
+
+<!-- Barre d'information -->
+<div class="bg-danger text-white py-2">
+  <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+    <!-- Icônes sociales -->
+    <div class="navbar-icons d-flex justify-content-center justify-content-md-end gap-2">
+      <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+      <a href="#" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+      <a href="#" aria-label="Spotify"><i class="fab fa-spotify"></i></a>
+      <a href="#" aria-label="Apple"><i class="fab fa-apple"></i></a>
+      <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+    </div>
+    <!-- Boutons DIRECT et Volume en noir sur fond blanc -->
+    <div class="d-flex gap-2 mt-2 mt-md-0">
+      <button class="btn btn-direct-volume" aria-label="Direct">
+        <i class="fas fa-play"></i> <span>DIRECT</span>
+      </button>
+      <button class="btn btn-direct-volume" aria-label="Volume">
+        <i class="fas fa-volume-up"></i>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<nav class="navbar navbar-expand-lg bg-white sticky-top shadow-sm">
+  <div class="container">
+    <!-- Logo -->
+    <a class="navbar-brand d-flex align-items-center" href="#">
+      <img src="assets/logosn.svg" alt="BIP RADIO" width="60" />
+    </a>
+
+    <!-- Burger menu à droite -->
+    <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon" style="color: #dc3545;"></span>
+    </button>
+
+
+    <!-- Menu et formulaire de recherche -->
+    <div class="collapse navbar-collapse" id="menu">
+      <!-- Menu centré -->
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 px-0 mx-0">
+        <li class="nav-item"><a class="nav-link" href="#">Info</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Programme</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Podcasts</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Videos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Emissions</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">A propos</a></li>
+      </ul>
+      <!-- Formulaire de recherche aligné à droite -->
+      <form class="d-flex ms-lg-3" style="gap: 5px;">
+        <input type="text" class="form-control form-control-sm" placeholder="Recherche" aria-label="Search">
+        <button class="btn btn-black btn-sm btn-red" type="submit">Recherche</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-- Barre avec boutons -->
+<div class="bg-light py-2 shadow-sm">
+  <div class="container d-flex justify-content-center flex-nowrap overflow-auto gap-3">
+    <button class="btn btn-direct-volume-noborder p-2 d-flex align-items-center justify-content-center gap-1 btn-same-size" aria-label="Direct">
+      <span>DIRECT</span>
+    </button>
+    <button class="btn btn-direct-volume-noborder p-2 d-flex align-items-center justify-content-center gap-1 btn-same-size" aria-label="Fil Info">
+      <span>FIL INFO</span>
+    </button>
+    <button class="btn btn-direct-volume-noborder p-2 d-flex align-items-center justify-content-center gap-1 btn-same-size" aria-label="Flash Infos">
+      <span>FLASH INFOS</span>
+    </button>
+    <button class="btn btn-direct-volume-noborder p-2 d-flex align-items-center justify-content-center gap-1 btn-same-size" aria-label="Actualités">
+      <span>ACTUALITES</span>
+    </button>
+  </div>
+</div>
+
+<!-- Hero -->
+<section class="bg-dark text-white text-center py-5" style="background: url('assets/background.svg') no-repeat center/cover; height: 50vh; background-color: rgba(0, 0, 0, 0.5); background-blend-mode: overlay;">
+  <div class="container d-flex flex-column justify-content-center h-100">
+    <h1 class="display-4 fw-bold">Bénin Info Première</h1>
+    <p class="lead">La station de radio d’information en continu</p>
+  </div>
+</section>
+
+<!-- Actualités -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title">Dernières actualités</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card card-news">
+          <img src="https://source.unsplash.com/400x200/?news" class="card-img-top" alt="Actualité">
+          <div class="card-body">
+            <span class="badge bg-danger mb-2">Société</span>
+            <h5 class="card-title">Incident à Cotonou : ce que l'on sait</h5>
+            <p class="card-text">Découvrez les premiers éléments communiqués par la police.</p>
+            <a href="#" class="btn btn-link p-0">Lire plus →</a>
+          </div>
+        </div>
+      </div>
+      <!-- Répéter pour plus d'actu -->
+    </div>
+  </div>
+</section>
+
+<!-- Podcasts -->
+<section class="py-5 bg-light">
+  <div class="container">
+    <h2 class="section-title">Podcasts | Replays</h2>
+    <div class="d-flex overflow-auto gap-3">
+      <div class="card" style="min-width: 250px;">
+        <img src="https://source.unsplash.com/250x150/?podcast" class="card-img-top" alt="">
+        <div class="card-body">
+          <h6 class="card-title">Podcast #1</h6>
+          <button class="btn btn-sm btn-outline-primary">Écouter</button>
+        </div>
+      </div>
+      <!-- Répéter pour autres podcasts -->
+    </div>
+  </div>
+</section>
+
+<!-- Emissions -->
+<section class="py-5">
+  <div class="container">
+    <h2 class="section-title">Émissions phares</h2>
+    <div class="row text-center g-4">
+      <div class="col-md-4">
+        <img src="https://randomuser.me/api/portraits/women/44.jpg" class="rounded-circle mb-2" width="100" alt="">
+        <h5>Miriam Jary</h5>
+        <p class="text-muted">Discours 2</p>
+      </div>
+      <!-- Répéter -->
+    </div>
+  </div>
+</section>
+
+<!-- En direct -->
+<section class="py-5 bg-white">
+  <div class="container">
+    <h2 class="section-title text-danger">En direct</h2>
+    <div class="timeline-item">
+      <strong class="text-danger">07:07</strong> Kempay — L’unique cravement anessien de mossaïcais
+    </div>
+    <div class="timeline-item">
+      <strong class="text-danger">07:11</strong> Emite e un pellitumace allinumétal de linctina...
+    </div>
+    <!-- Répéter -->
+  </div>
+</section>
+
+<!-- Newsletter -->
+<section class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="section-title">Restez informé</h2>
+    <form class="d-flex justify-content-center gap-2">
+      <input type="email" class="form-control w-auto" placeholder="Adresse email">
+      <button class="btn btn-danger">S’inscrire</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="mt-5 bg-dark text-white py-4">
+  <div class="container">
+    <div class="row text-center text-lg-start">
+      <div class="col-lg-4 mb-3">
+        <h5>BIP RADIO</h5>
+        <p class="small mb-0">© 2025 BIP. Tous droits réservés.</p>
+      </div>
+      <div class="col-lg-4 mb-3">
+        <h6>Menu</h6>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white text-decoration-none">Accueil</a></li>
+          <li><a href="#" class="text-white text-decoration-none">S'informer</a></li>
+        </ul>
+      </div>
+      <div class="col-lg-4 mb-3">
+        <h6>Suivez-nous</h6>
+        <a href="#" class="text-white me-2">Facebook</a>
+        <a href="#" class="text-white me-2">Twitter</a>
+        <a href="#" class="text-white">YouTube</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/scripts.js"></script>
+</body>
+</html>
