@@ -235,6 +235,29 @@ footer {
   color: #fff !important;
 }
 
+footer .navbar-icons a,
+footer .navbar-icons a i {
+  color: #000 !important; /* Noir */
+  transition: color 0.3s;
+}
+
+footer .navbar-icons a:hover,
+footer .navbar-icons a:focus,
+footer .navbar-icons a:hover i,
+footer .navbar-icons a:focus i {
+  color: #f8cb03 !important; /* Rouge au survol */
+}
+
+footer .navbar-icons a {
+  font-size: 1rem !important;   /* Réduit la taille du cercle */
+  width: 26px !important;       /* Réduit la largeur du cercle */
+  height: 26px !important;      /* Réduit la hauteur du cercle */
+}
+
+footer .navbar-icons a i {
+  font-size: 1rem !important;   /* Réduit la taille de l'icône */
+}
+
 @media (max-width: 768px) {
   .hero-section {
     height: 30vh; /* Réduit la hauteur sur les petits écrans */
@@ -276,4 +299,48 @@ body {
 footer {
   margin-bottom: 0;
   padding-bottom: 0;
+}
+
+/* Ajoute ceci dans ton fichier styles.css */
+a.btn-link.p-0 {
+  color: #f80303 !important;
+  font-weight: 500;
+}
+
+a.btn-link.p-0:hover,
+a.btn-link.p-0:focus {
+  color: #b30000 !important;
+  text-decoration: underline;
+}
+
+/* Hero section text ombré (ombre portée blanche) */
+.hero-title,
+.hero-subtitle {
+  color: #fff;
+  text-shadow:
+    4px 4px 16px #000,
+    0 2px 8px #000,
+    0 0 2px #000;
+}
+
+/* Pour appliquer ces styles, ajoute les classes dans index.html :
+   <h1 class="display-4 fw-bold hero-title">Bénin Info Première</h1>
+   <p class="lead hero-subtitle">La station de radio d’information en continu</p>
+*/
+
+/* Liens "Lire plus" en rouge et gras */
+a.btn-link.p-0 {
+  color: #f80303 !important;
+  font-weight: 500;
+}
+a.btn-link.p-0:hover,
+a.btn-link.p-0:focus {
+  color: #b30000 !important;
+  text-decoration: underline;
+}
+
+/* Ajoute ce style */
+.bg-yellow-custom {
+  background: #fff505;
+  border-radius: 5px; /* Arrondi le fond */
 }
